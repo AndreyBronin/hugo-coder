@@ -4,6 +4,8 @@
       <h1 class="title">{{ .Title }}</h1>
       <h2 class="date">{{ .Date.Format "January 2, 2006" }}</h2>
 
+  {{ partial "i18nlist.html" . }}
+
       {{ if eq .Params.math "true" }}
         <script type="text/javascript" async
           src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full">
